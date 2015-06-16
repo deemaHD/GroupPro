@@ -1,8 +1,8 @@
 function GroupView () {
-    var tpm = _.template(templates.groupTpm),
-        tpmString = '',
+    var listDiv = document.getElementById('list'), 
+        tpm = _.template(templates.groupTpm),
         students = new Group().getStudents(),
-        listDiv = document.getElementById('list'),
+        tpmString = '',
         argument = {};
     
     init();
@@ -40,7 +40,7 @@ function GroupView () {
         } else if (event.target.innerHTML == students[7].getAttribute('name')) {
             argument = students[7].toJSON();
         }
-        mediator.publish('clickONList', argument);
+        mediator.publish('studentSelect', argument);
     }
     
     return this;

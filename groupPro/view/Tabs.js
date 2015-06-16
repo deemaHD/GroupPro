@@ -6,8 +6,8 @@ function Tabs () {
         tpm = _.template(templates.tabsTpm),
         MODES = {
             NAME: 1,
-            PHONE: 2,
-            SKYPE: 3
+            CONTACTS: 2,
+            ADRESS: 3
         },
         dispMode = MODES.NAME,
         preview;
@@ -32,11 +32,11 @@ function Tabs () {
             divContent[0].innerHTML = tpmContent({
                 content: student.name + ' ' + student.lastName
             });
-        } else if (dispMode === MODES.PHONE) {
+        } else if (dispMode === MODES.CONTACTS) {
             divContent[0].innerHTML = tpmContent({
                 content: student.phone + ' ' + student.skype + ' ' + student.email
             });
-        } else if (dispMode === MODES.SKYPE) {
+        } else if (dispMode === MODES.ADRESS) {
             divContent[0].innerHTML = tpmContent({
                 content: student.city + ' ' + student.street
             });
@@ -50,10 +50,10 @@ function Tabs () {
     function eventHandler (event) {
         if (event.target.classList.contains('buttonName')) {
             createContent(MODES.NAME);
-        } else if (event.target.classList.contains('buttonPhone')) {
-            createContent(MODES.PHONE);
-        } else if (event.target.classList.contains('buttonSkype')) {
-            createContent(MODES.SKYPE);
+        } else if (event.target.classList.contains('buttonContacts')) {
+            createContent(MODES.CONTACTS);
+        } else if (event.target.classList.contains('buttonAdress')) {
+            createContent(MODES.ADRESS);
         }
     }
     

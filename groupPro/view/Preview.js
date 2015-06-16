@@ -1,12 +1,12 @@
 function Preview (_person) {
-    var preview = document.getElementById('preview'),
-        tpmContent = _.template(templates.previewContentTpm),
+    var tpmContent = _.template(templates.previewContentTpm),
         tpmButton = _.template(templates.previewButtonTpm),
+        preview = document.getElementById('preview'),
         person = _person;
     
-    start();
+    init();
     
-    function start () {
+    function init () {
         createPreviewButton();
         attachEvents();
     }

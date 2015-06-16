@@ -1,9 +1,7 @@
 function StudentView (_student) {
     var tpm = _.template(templates.studentTpm),
-        tpmString = '',
         student = _student,
-        listDiv = document.getElementById('list'), 
-        argument;
+        tpmString = '';
     
     this.getView = function () {
         tpmString = tpm({

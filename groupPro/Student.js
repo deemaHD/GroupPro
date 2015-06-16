@@ -10,7 +10,7 @@ function Student (_name, _lastName, _phone, _skype, _email, _city, _street) {
     };
     
     this.getAttribute = function (name) {
-        return attributes[name];
+        return attributes.name;
     };
     
     this.toJSON = function () {
