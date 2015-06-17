@@ -1,4 +1,4 @@
-function Tabs () {
+function TabsView () {
     var student = {name: 'N/A', lastName: 'N/A', phone: 'N/A', skype: 'N/A', email: 'N/A', city: 'N/A', street: 'N/A'},
         divContent = document.getElementsByClassName('content'),
         tpmContent = _.template(templates.contentTpm),
@@ -12,15 +12,15 @@ function Tabs () {
         dispMode = MODES.NAME,
         preview;
     
-    this.attachPerson = function (_student) {
+    this.attachStudent = function (_student) {
         student = _student;
         createPreview(student);      
         createContent(MODES.NAME);
     };
     
-    start();
+    init();
     
-    function start () {
+    function init () {
         mainDiv.innerHTML = tpm({});
         createContent(MODES.NAME);
         attachEvents();

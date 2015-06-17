@@ -1,6 +1,6 @@
 function Controller () {
     var groupView = new GroupView(),
-        tabs = new Tabs();
+        tabs = new TabsView();
     
-    mediator.subscribe('studentSelect', tabs.attachPerson);
+    mediator.subscribe('studentSelect', tabs.attachStudent);
 }

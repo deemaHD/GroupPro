@@ -1,22 +1,25 @@
 function GroupView () {
     var listDiv = document.getElementById('list'), 
         tpm = _.template(templates.groupTpm),
-        students = new Group().getStudents(),
+        group = new Group(),
+        students = group.getStudents(),
         tpmString = '',
-        argument = {};
+        argument = {},
+        studentView;
     
     init();
     
     function init () {
         students.forEach(function (student) {
-            tpmString += new StudentView(student).getView();
+            studentView = new StudentView(student);
+            tpmString += studentView.getView();
         });
     
-        getViev();
+        getView();
         listDiv.addEventListener('click', addEvents, false);
     }
     
-    function getViev () {
+    function getView () {
         listDiv.innerHTML = tpm({
             students: tpmString
         });

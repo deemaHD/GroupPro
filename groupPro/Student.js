@@ -7,18 +7,19 @@ function Student (_name, _lastName, _phone, _skype, _email, _city, _street) {
         email: _email,
         city: _city,
         street: _street
-    };
+    },
+    studentJSON;
     
     this.getAttribute = function (name) {
         return attributes.name;
     };
     
     this.toJSON = function () {
-        var temp = {};
+        studentJSON = {};
         for (key in attributes) {
-            temp[key] = attributes[key];
+            studentJSON[key] = attributes[key];
         }
-        return temp;
+        return studentJSON;
     };
     
     return this;
