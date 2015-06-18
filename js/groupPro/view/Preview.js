@@ -1,8 +1,8 @@
-function Preview (_person) {
+function Preview (_student) {
     var tpmContent = _.template(templates.previewContentTpm),
         tpmButton = _.template(templates.previewButtonTpm),
         preview = document.getElementById('preview'),
-        person = _person;
+        student = _student;
     
     init();
     
@@ -17,11 +17,11 @@ function Preview (_person) {
     
     function showContent () {
         preview.innerHTML = tpmContent({
-            name: person.name + ' ' + person.lastName,
-            phone: person.phone,
-            email: person.email,
-            skype: person.skype,
-            adress: person.city + ' ' + person.street
+            name: student.name + ' ' + student.lastName,
+            phone: student.phone,
+            email: student.email,
+            skype: student.skype,
+            adress: student.city + ' ' + student.street
         });
     }
     
