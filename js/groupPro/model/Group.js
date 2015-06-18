@@ -1,5 +1,7 @@
 function Group () {
-    var students = [];
+    var students = [],
+        studentsClone = [],
+        i;
     
     init();
     
@@ -15,7 +17,11 @@ function Group () {
     }
     
     this.getStudents = function () {
-        return students;    
+        studentsClone = [];
+        for (i = 0; i < students.length; i++) {
+            studentsClone[i] = students[i].toJSON();
+        }
+        return studentsClone;    
     };
     
     return this;

@@ -5,7 +5,7 @@ function StudentView (_student) {
     
     this.getView = function () {
         tpmString = tpm({
-            name: student.getAttribute('name')
+            name: student.name
         });
         return tpmString;
     };

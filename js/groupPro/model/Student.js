@@ -10,10 +10,6 @@ function Student (_name, _lastName, _phone, _skype, _email, _city, _street) {
     },
     studentJSON;
     
-    this.getAttribute = function (name) {
-        return attributes.name;
-    };
-    
     this.toJSON = function () {
         studentJSON = {};
         for (key in attributes) {
