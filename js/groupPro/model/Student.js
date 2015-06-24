@@ -7,15 +7,10 @@ function Student (_name, _lastName, _phone, _skype, _email, _city, _street) {
         email: _email,
         city: _city,
         street: _street
-    },
-    studentJSON;
+    };
     
     this.toJSON = function () {
-        studentJSON = {};
-        for (key in attributes) {
-            studentJSON[key] = attributes[key];
-        }
-        return studentJSON;
+        return _.clone(attributes);
     };
     
     return this;

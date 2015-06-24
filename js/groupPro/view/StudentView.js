@@ -1,13 +1,13 @@
 function StudentView (_student) {
-    var tpm = _.template(templates.studentTpm),
-        student = _student,
-        tpmString = '';
+    var $li = $('<li></li>'),
+        student = _student;
     
-    this.getView = function () {
-        tpmString = tpm({
-            name: student.name
+    this.getStudentLi = function () {
+        $li.html(student.name);
+        $li.on('click', function () {
+            mediator.publish('studentSelect' , student);
         });
-        return tpmString;
+        return $li;
     };
     
     return this;

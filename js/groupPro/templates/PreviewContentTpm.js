@@ -1,6 +1,9 @@
 templates.previewContentTpm = [
-'    <div class="previewContent">',
-'        <b>Full name:</b> <%= name %>' ,
+'    <div class = "preview">',
+'       PREVIEW',
+'    </div>',
+'    <div class="previewContent hiden">',
+'        <b>Full name:</b> <%= name + \' \' + lastName %>' ,
 '        <br>',
 '        <b>Phone:</b> <%= phone %>',
 '        <br>',
@@ -8,7 +11,7 @@ templates.previewContentTpm = [
 '        <br>',
 '        <b>Skype:</b> <%= skype %>',
 '        <br>',
-'        <b>Adress:</b> <%= adress %>',
-'         <div class="closeContent">X</div>',
+'        <b>Adress:</b> <%= city + \' \' + street %>',
+'        <div class="closeContent">X</div>',
 '    </div>'
 ].join('');

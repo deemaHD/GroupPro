@@ -123,3 +123,7 @@ li:hover {
     margin-top: 140px;
     margin-left: -430px;
 }
+
+.hiden {
+    display: none;
+}

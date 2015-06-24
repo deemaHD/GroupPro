@@ -1,7 +1,6 @@
 function Group () {
     var students = [],
-        studentsClone = [],
-        i;
+        studentsClone = [];
     
     init();
     
@@ -16,13 +15,12 @@ function Group () {
         students.push(new Student('Waylon', 'Smithers', '+142309876', 'smeetherz', 'post@i.ua', 'Dnipropetrovsk', 'Zavodskaya, 76'));
     }
     
-    this.getStudents = function () {
-        studentsClone = [];
-        for (i = 0; i < students.length; i++) {
-            studentsClone[i] = students[i].toJSON();
-        }
+    this.toArray = function () {
+        students.forEach(function (student, i) {
+            studentsClone[i] = student.toJSON();
+        });
         return studentsClone;    
-    };
+    }
     
     return this;
 }

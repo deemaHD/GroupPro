@@ -1,60 +1,29 @@
 function TabsView () {
-    var student = {name: 'N/A', lastName: 'N/A', phone: 'N/A', skype: 'N/A', email: 'N/A', city: 'N/A', street: 'N/A'},
-        divContent = document.getElementsByClassName('content'),
-        tpmContent = _.template(templates.contentTpm),
-        mainDiv = document.getElementById('tabs'),
-        tpm = _.template(templates.tabsTpm),
-        MODES = {
-            NAME: 1,
-            CONTACTS: 2,
-            ADRESS: 3
-        },
-        dispMode = MODES.NAME,
+    var $div = $('#tabs'),
+        tmp = _.template(templates.tabsTpm),
+        student = {},
+        $tab = $('.tab'),
         preview;
     
-    this.attachStudent = function (_student) {
+    this.init = function (_student) {
         student = _student;
-        createPreview(student);      
-        createContent(MODES.NAME);
-    };
-    
-    init();
-    
-    function init () {
-        mainDiv.innerHTML = tpm({});
-        createContent(MODES.NAME);
+        createPreview(student);
+        $div.html(tmp(student));
         attachEvents();
-    }
-    
-    function createContent (_mode) {
-		dispMode = _mode;
-        if (dispMode === MODES.NAME) {
-            divContent[0].innerHTML = tpmContent({
-                content: student.name + ' ' + student.lastName
-            });
-        } else if (dispMode === MODES.CONTACTS) {
-            divContent[0].innerHTML = tpmContent({
-                content: student.phone + ' ' + student.skype + ' ' + student.email
-            });
-        } else if (dispMode === MODES.ADRESS) {
-            divContent[0].innerHTML = tpmContent({
-                content: student.city + ' ' + student.street
-            });
-        }
-    }
-    
+    };
+
     function attachEvents () {
-        mainDiv.addEventListener('click', eventHandler, false);
-    }
-    
-    function eventHandler (event) {
-        if (event.target.classList.contains('buttonName')) {
-            createContent(MODES.NAME);
-        } else if (event.target.classList.contains('buttonContacts')) {
-            createContent(MODES.CONTACTS);
-        } else if (event.target.classList.contains('buttonAdress')) {
-            createContent(MODES.ADRESS);
-        }
+        $('.button').each(function (buttonIndex) {
+            $(this).on('click', function () {
+                $('.tab').each(function (tabIndex) {
+                    if (buttonIndex !== tabIndex) {
+                        $(this).addClass('hiden');
+                    } else {
+                        $(this).removeClass('hiden');
+                    }
+                });
+            });
+        });
     }
     
     function createPreview (_student) {
