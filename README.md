@@ -1,2 +1,0 @@
-# GroupPro
-HT GroupPro

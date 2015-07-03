@@ -1,0 +1,82 @@
+[
+	{
+	//add id
+		"name": "Barney",
+		"lastName": "Gumble",
+		"phone": "211234567",
+		"skype": "barneybeer",
+		"email": "email@em.ua",
+		"city": "Dnipropetrovsk",
+		"street": "Barikadnaya 34"
+ 	},
+	
+	{
+		"name": "Montgomery",
+		"lastName": "Burns",
+		"phone": "+123456789",
+		"skype": "burnsSKP",
+		"email": "mail@em.ua",
+		"city": "Dnipropetrovsk",
+		"street": "Gagarina 12"
+ 	},
+	
+	{
+		"name": "Kent",
+		"lastName": "Brockman",
+		"phone": "+345623789",
+		"skype": "brockman_news",
+		"email": "email@em.ua",
+		"city": "Dnipropetrovsk",
+		"street": "Kirova, 1776"
+ 	},
+	
+	{
+		"name": "Troy",
+		"lastName": "McClure",
+		"phone": "+1239876543",
+		"skype": "mcluuure",
+		"email": "mail@ee.ua",
+		"city": "Dnipropetrovsk",
+		"street": "Kazakova, 46"
+ 	},
+	
+	{
+		"name": "Julius",
+		"lastName": "Hibert",
+		"phone": "+1234432345",
+		"skype": "hibbbert_103",
+		"email": "email.32@ua",
+		"city": "Dnipropetrovsk",
+		"street": "Moskovskaya, 101"
+ 	},
+	
+	{
+		"name": "Carl",
+		"lastName": "Carlson",
+		"phone": "+198765678",
+		"skype": "carlsoon",
+		"email": "post@i.ua",
+		"city": "Dnipropetrovsk",
+		"street": "Zavodskaya, 43"
+ 	},
+	
+	{
+		"name": "Lenny",
+		"lastName": "Leonard",
+		"phone": "+12434334",
+		"skype": "leonardo",
+		"email": "post@i.ua",
+		"city": "Dnipropetrovsk",
+		"street": "Hollywood, 56"
+ 	},
+	
+	{
+		"name": "Waylon",
+		"lastName": "Smithers",
+		"phone": "+142309876",
+		"skype": "smeetherz",
+		"email": "email@em.ua",
+		"city": "Dnipropetrovsk",
+		"street": "Zavodskaya, 76"
+ 	}
+]
