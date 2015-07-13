@@ -1,0 +1,129 @@
+* {
+    margin: 0 auto;
+}
+
+#main {
+    float: left;
+    width: 520px;
+}
+
+ul {
+    margin-left: -30px;
+    width: 80px;
+}
+
+.button {
+    display: block;
+    width: 80px;
+    background-color: cornflowerblue;
+    color: black;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px 0px rgba(50, 50, 50, 0.75);
+    cursor: pointer;
+}
+
+.content {
+    width: 270px;
+    height: 90px;
+    background-color: lightcyan;
+    padding: 20px 20px;
+    font-size: 30px;
+    margin-top: -135px;
+    margin-left: 120px;
+    border-radius: 5px;
+    box-shadow: 1px 10px 30px 0px rgba(50, 50, 50, 0.75);
+}
+
+.preview {
+    display: block;
+    width: 80px;
+    background-color: cornflowerblue;
+    color: black;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 3px 0px rgba(50, 50, 50, 0.75);
+    cursor: pointer;
+}
+
+.previewContent {
+    width: 395px;
+    height: 160px;
+    margin-left: 15px;
+    margin-top: 5px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    box-shadow: 1px 10px 30px 0px rgba(50, 50, 50, 0.75);
+}
+
+.closeContent {
+    width: 30px;
+    height: 30px;
+    background-color: firebrick;
+    float: right;
+    margin-top: -130px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px 0px rgba(50, 50, 50, 0.75);
+    cursor: pointer;
+}
+
+#preview {
+    float: left;
+}
+
+#container {
+    float: left;
+}
+
+.unvisible {
+    display: none
+}
+
+li {
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 5px;
+    display: block;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 5px 3px 0px rgba(50, 50, 50, 0.75);
+}
+
+li:hover {
+    background-color: darkgrey;
+    box-shadow: 1px 10px 30px 0px rgba(50, 50, 50, 0.75);
+    cursor: pointer;
+}
+
+#list {
+    width: 200px;
+    margin-left: 10px;
+    margin-right: -70px;
+    float: left;
+}
+
+#tabs {
+    float: left;
+    margin-left: 30px;
+}
+
+#preview {
+    float: left;
+    margin-top: 140px;
+    margin-left: -430px;
+}
+
+.hiden {
+    display: none;
+}
