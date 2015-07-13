@@ -1,6 +1,10 @@
 [
 	{
+<<<<<<< HEAD
         "id": 1,
+=======
+	//add id
+>>>>>>> 06964b4c2d36bfd95f998e9d4e849fe53b74cd0b
 		"name": "Barney",
 		"lastName": "Gumble",
 		"phone": "211234567",
@@ -11,7 +15,10 @@
  	},
 	
 	{
+<<<<<<< HEAD
         "id": 2,
+=======
+>>>>>>> 06964b4c2d36bfd95f998e9d4e849fe53b74cd0b
 		"name": "Montgomery",
 		"lastName": "Burns",
 		"phone": "+123456789",
@@ -22,7 +29,10 @@
  	},
 	
 	{
+<<<<<<< HEAD
         "id": 3,
+=======
+>>>>>>> 06964b4c2d36bfd95f998e9d4e849fe53b74cd0b
 		"name": "Kent",
 		"lastName": "Brockman",
 		"phone": "+345623789",
@@ -33,7 +43,10 @@
  	},
 	
 	{
+<<<<<<< HEAD
         "id": 4,
+=======
+>>>>>>> 06964b4c2d36bfd95f998e9d4e849fe53b74cd0b
 		"name": "Troy",
 		"lastName": "McClure",
 		"phone": "+1239876543",
@@ -44,7 +57,10 @@
  	},
 	
 	{
+<<<<<<< HEAD
         "id": 5,
+=======
+>>>>>>> 06964b4c2d36bfd95f998e9d4e849fe53b74cd0b
 		"name": "Julius",
 		"lastName": "Hibert",
 		"phone": "+1234432345",
@@ -55,7 +71,10 @@
  	},
 	
 	{
+<<<<<<< HEAD
         "id": 6,
+=======
+>>>>>>> 06964b4c2d36bfd95f998e9d4e849fe53b74cd0b
 		"name": "Carl",
 		"lastName": "Carlson",
 		"phone": "+198765678",
@@ -66,7 +85,10 @@
  	},
 	
 	{
+<<<<<<< HEAD
         "id": 7,
+=======
+>>>>>>> 06964b4c2d36bfd95f998e9d4e849fe53b74cd0b
 		"name": "Lenny",
 		"lastName": "Leonard",
 		"phone": "+12434334",
@@ -77,7 +99,10 @@
  	},
 	
 	{
+<<<<<<< HEAD
         "id": 8,
+=======
+>>>>>>> 06964b4c2d36bfd95f998e9d4e849fe53b74cd0b
 		"name": "Waylon",
 		"lastName": "Smithers",
 		"phone": "+142309876",
